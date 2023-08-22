@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SignUpDialog.css";
+import {Spinner} from 'react-bootstrap';
 import { useSignupUserMutation } from "../services/appApi";
 import { Link, useNavigate } from "react-router-dom";
 const SignUpDialog = ({ open, onClose }) => {
@@ -19,12 +20,12 @@ const SignUpDialog = ({ open, onClose }) => {
     setPassword(e.target.value);
   };
 
-  const submitDetails = async (e) => {
+  const submitButton = async (e) => {
     e.preventDefault();
     if (name.length < 3) return alert("Please Enter a valid username");
     if (password.length < 5) return alert("Please Enter a strong password");
     signupUser({ name, password }).then(({ data }) => {
-      if (data.success) {
+      if (data) {
         console.log(data);
         navigate("/post");
       }
@@ -58,9 +59,8 @@ const SignUpDialog = ({ open, onClose }) => {
             value={password}
           />
         </div>
-        <button className="dialog-button primary" onClick={submitDetails}>
-          Next
-        </button>
+        <button className="dialog-button primaryLog" onClick={submitButton}>
+        {isLoading ? <Spinner animation="grow"></Spinner>:"Next"}</button>
       </div>
     </div>
   );

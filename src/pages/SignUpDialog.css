@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Set a higher z-index value */
+    z-index: 1000; 
   }
   
   .dialog {
@@ -35,7 +35,7 @@
   font-size: 40px;
   cursor: pointer;
   padding: 0;
-  z-index: 1002; /* Set a higher z-index value */
+  z-index: 1002; 
 }
   
   .dialog-title {
@@ -80,6 +80,7 @@
   }
   
   .dialog-button.primary {
+
     background-color: black;
     color: white;
   }
@@ -98,3 +99,49 @@
     background-color: #E8F5FD;
   }
   
+
+  .profile-menu {
+    position: relative;
+  }
+  
+  .self-tab-icon {
+    cursor: pointer;
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .menu-description {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .menu-button1 {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .menu-button2 {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }

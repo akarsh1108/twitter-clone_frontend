@@ -136,28 +136,33 @@ function PostForm() {
       ))}
 
 {showEditDialog && (
-  <div className="edit-dialog">
-    <p>Edit Message:</p>
+  <div className="dialog-overlay1">
+    <div className="dialog1">
+      <button className="dialog-close" onClick={handleCancelDelete}>
+        &times;
+      </button>
+    <h2 className="dialog-title">Edit Message</h2>
     <textarea
       className="edit-textarea"
       rows="4"
       onChange={(e) => setEditedContent(e.target.value)}
       value={editedContent}
     ></textarea>
-    <button onClick={handleConfirmEdit}>Save</button>
-    <button onClick={handleCancelEdit}>Cancel</button>
+    <button className="dialog-button save" onClick={handleConfirmEdit}>Save</button>
+    <button className="dialog-button cancel" onClick={handleCancelEdit}>Cancel</button>
+  </div>
   </div>
 )}
 
 
 {showDeleteConfirm && (
-  <div className="dialog-overlay">
-    <div className="dialog">
+  <div className="dialog-overlay1">
+    <div className="dialog1">
       <button className="dialog-close" onClick={handleCancelDelete}>
         &times;
       </button>
       <h2 className="dialog-title">Confirm Delete</h2>
-      <p>Are you sure you want to delete this message?</p>
+      <p>Are you sure you want to delete this Post?</p>
       <div className="edit-dialog-buttons">
         <button className="dialog-button save" onClick={handleConfirmDelete}>
           Confirm

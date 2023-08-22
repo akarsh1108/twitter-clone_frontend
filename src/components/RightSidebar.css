@@ -50,8 +50,8 @@
 
 .rightButtonContainer {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center-align horizontally */
+    align-items: center; 
+    justify-content: center; 
     margin-top: 5px;
 }
 

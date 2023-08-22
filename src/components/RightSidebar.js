@@ -15,7 +15,7 @@ const RightSidebar = () => {
       socket.emit('tweet-room');
       socket.emit('new-user');
       socket.emit('new-follow');
-      
+      socket.emit('new-follow');
     }
   }, []);
 
@@ -28,6 +28,7 @@ const RightSidebar = () => {
     console.log(payload);
     setFollows(payload);
     const initialFollowingMap = {};
+      
     members.forEach((member) => {
       const isFollowing = follows.some(
         (follow) => follow.id === user._id && follow.username === member._id

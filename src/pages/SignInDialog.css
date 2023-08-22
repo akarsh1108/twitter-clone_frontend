@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Set a higher z-index value */
+    z-index: 1000; 
   }
   
   .dialog {
@@ -34,7 +34,7 @@
     font-size: 40px;
     cursor: pointer;
     padding: 0;
-    z-index: 1002; /* Set a higher z-index value */
+    z-index: 1002; 
   }
   
   .dialog-title {
@@ -74,7 +74,7 @@
     font-weight: bold;
     cursor: pointer;
     margin-top: 30px;
-    margin-left: 70px;
+    margin: 0 auto;
     transition: background-color 0.3s ease;
   }
   
@@ -100,7 +100,7 @@
   .dialog-logo {
     display: block;
     margin: 0 auto;
-    max-width: 80px; /* Adjust the logo size as needed */
+    max-width: 80px; 
     margin-bottom: 20px;
     height: 40px;
   }
