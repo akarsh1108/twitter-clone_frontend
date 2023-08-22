@@ -1,0 +1,72 @@
+.rightContainer {
+    display: flex;
+    background-color: #F7F9F9;
+ 
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+.tabsLayout {
+    padding: 15px;
+}
+
+.followContainer{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.member-status1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 60px;
+    height: 60px;
+}
+
+.rightTabTitle{
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    font-size:20px;
+    font-weight: 600;
+}
+
+.rightTabButton{
+    display: flex;
+    align-items: center;
+    justify-content: right; 
+}
+
+.member-status-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rightButtonContainer {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center-align horizontally */
+    margin-top: 5px;
+}
+
+.rightButton {
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 200px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.rightButton:hover {
+    background-color: #272C30;
+}
